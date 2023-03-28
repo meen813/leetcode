@@ -1,11 +1,7 @@
-
-
-
-
 var isIsomorphic = function (s, t) {
     //check if the length of each string is same. If not they are not isomorphic.
     if (s.length !== t.length) return false;
-    //create two different two objects for each strings' characters
+    //create two different objects for each strings' characters
     let mapS = {};
     let mapT = {};
 
