@@ -13,7 +13,7 @@
 
 var mergeTwoLists = function (l1, l2) {
     // Create a dummy node for the new list
-    const dummy = new ListNode(0);
+    const dummy = new ListNode(0, null);
     // Create a var 'tail' to indicate the last node of the list.
     let tail = dummy;
 
@@ -35,3 +35,5 @@ var mergeTwoLists = function (l1, l2) {
     // Return the head of the new list (ignoring the dummy node)
     return dummy.next;
 };
+
+
