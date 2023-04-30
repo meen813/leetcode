@@ -31,7 +31,7 @@ var longestPalindrome = function (words) {
                 flag = true;
                 count += 2;
                 map[word] -= 1;
-            }
+            }   
             continue;
         }
         // 회문 문자열이 아닌 경우
@@ -42,7 +42,7 @@ var longestPalindrome = function (words) {
             map[reverse] -= 1;
             count += 4;
         }
-    }
+    }   
 
     return count;
 };
