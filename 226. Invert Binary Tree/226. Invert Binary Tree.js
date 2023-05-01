@@ -7,11 +7,12 @@ function invertTree(root) {
 
 
 // Runtime: 64 ms, faster than 92.88% of JavaScript online submissions for Invert Binary Tree.
-var invertTree = function(root) {
+var invertTree = function (root) {
     // Base case...
-    if(root == null){
+    if (root == null) {
         return root
     }
+    // swapping process...
     const curr = root.left
     root.left = root.right
     root.right = curr
@@ -19,7 +20,6 @@ var invertTree = function(root) {
     invertTree(root.left)
     // Call the function recursively for the right subtree...
     invertTree(root.right)
-    // swapping process...
 
     return root         // Return the root...   
 };
